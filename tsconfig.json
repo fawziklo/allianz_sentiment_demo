@@ -12,14 +12,14 @@
     "importHelpers": true,
     "target": "es2015",
     "types": ["node"],
-    "exclude": [
-      "hash_util.d.ts"
-    ],
     "lib": [
       "es2018",
       "dom"
     ]
   },
+  "exclude": [
+    "hash_util.d.ts"
+  ],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
