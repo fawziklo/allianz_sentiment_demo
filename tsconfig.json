@@ -17,9 +17,7 @@
       "dom"
     ]
   },
-  "exclude": [
-    "**/hash_util.d.ts"
-  ],
+  "exclude": ["node_modules", "**/hash_util.d.ts"],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
