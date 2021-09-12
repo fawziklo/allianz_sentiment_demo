@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js rimraf node_modules && tensorflow && tfjs-core --progress --config node_modules/@tensorflow/tfjs-core/dist/hash_util.d.ts",
+    "start": "node server.js",
     "start:prod" :"node server.js",
-    "build": "ng build --prod",
+    "build": "ng build --prod rimraf node_modules && tensorflow && tfjs-core --progress --config node_modules/@tensorflow/tfjs-core/dist/hash_util.d.ts",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
