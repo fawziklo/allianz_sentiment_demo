@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Review Expert</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+
+
+<div style="width: 100%;margin-top: 10px;">
+    <mat-card class="example-card" style="display: flex;justify-content: center;margin-bottom: 5%;">
+        <div style="display: flex;">
+            <p>What do policyholders think of Allianz</p>
+            <angular-emojis [name]="'thinking_face'" size="20" style="margin-top: 4%;margin-left: 5px;"> </angular-emojis>
+            <angular-emojis [name]="'thinking_face'" size="20" style="margin-top: 4%;margin-left: 5px;"> </angular-emojis>
+            <p>?</p>
+        </div>
+
+    </mat-card>
+
+
+    <div style="display: flex;justify-content: center;">
+        <textarea (input)="getText($event.target.value)" type="text" style="width: 500px;height: 200px;"
+            placeholder="Please enter your review"></textarea>
+    </div>
+
+    <div style="display: flex;justify-content: center;margin-top: 20px;">
+        <button mat-raised-button color="primary" (click)=makePrediction()>Check review sentiment</button>
+    </div>
+
+</div>
+
+<div class="footer">
+
+</div>
